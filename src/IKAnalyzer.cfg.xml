@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
+<properties>  
+	<comment>IK Analyzer 扩展配置</comment>
+	<!--用户可以在这里配置自己的扩展字典-->
+	<entry key="ext_dict">
+		/dic/idiom.dic;
+		/dic/socialsciences/law.dic;
+	</entry> 
+	  
+	 <!--用户可以在这里配置自己的扩展停止词字典/dic/festival.dic;
+		/dic/language.dic;
+		/dic/name-foreign.dic;
+		/dic/nation.dic;
+		/dic/org-domestic.dic;
+		/dic/org-foreign.dic;
+		/dic/star-domestic.dic;
+		/dic/star-foreign.dic;
+		/dic/x-confucian-family-name.dic;
+		/dic/x-for-combinatorics.dic;
+		/dic/x-noise-charactor.dic;
+		/dic/x-noise-word.dic;
+		/dic/x-unit.dic;
+		/dic/locale/beijing.dic;
+		/dic/locale/fuzhou.dic;
+		/dic/locale/quanzhou.dic;
+		/dic/locale/xiamen.dic;
+		/dic/division/africa.dic;
+		/dic/division/america.dic;
+		/dic/division/china.dic;
+		/dic/division/europe.dic;
+		/dic/division/japan.dic;
+		/dic/division/korea.dic;
+		/dic/division/oceania.dic;
+		/dic/division/taiwan.dic;
+		/dic/ext_dic/commodityDic.dic;
+		/dic/ext_dic/online.dic;
+		/dic/ext_dic/test.dic;
+		/dic/administrative.dic; 
+		/dic/appellation.dic; 
+		/dic/company.dic;
+		/dic/comupter-science.dic;-->
+	<entry key="ext_stopwords">
+		/dic/stopword.dic;
+	</entry> 
+	
+</properties>

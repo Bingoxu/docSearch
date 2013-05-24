@@ -1,0 +1,2 @@
+@echo off
+start /min "LuceneDocServer" java -Xms128M -Xmx1024M -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8787 -cp ./conf;./lib/commons-logging.jar;./lib/fontbox-1.7.1.jar;./lib/jempbox-1.7.1.jar;./lib/pdfbox-1.7.1.jar;./lib/pdfbox-app-1.7.1.jar;./lib/junit.jar;./lib/lucene-analyzers-3.6.1.jar;./lib/lucene-core-3.6.1.jar;./lib/lucene-highlighter-3.6.1.jar;./lib/mina-core-2.0.4.jar;./lib/IKAnalyzer3.2.8.jar;./lib/slf4j-api-1.6.1.jar;./lib/jsoup-1.6.3.jar;./lib/log4j-1.2.16.jar;./lib/slf4j-log4j12-1.6.1.jar;./lib/docService.jar; com.huawei.imax.server.DocServer

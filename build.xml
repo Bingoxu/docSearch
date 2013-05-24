@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="javaTest" default="checksum" basedir=".">
+	<property name="maven.root" value="${user.home}\.m2\repository" />
+	<property name="groupId" value="iMaxExService" />
+	<property name="artifactId" value="docService" />
+	<property name="ver" value="0.1" />
+	<property name="resPath" value="${maven.root}\${groupId}\${artifactId}\${ver}" />
+	<property name="jar.name" value="${artifactId}-${ver}.jar" />
+	<property name="pom.name" value="${artifactId}-${ver}.pom" />
+	<target name="clean">
+		<echo message="clean dir ${resPath}" />
+		<delete dir="${resPath}" />
+	</target>
+	<target name="prepare" depends="clean">
+		<echo message="creating dir ${resPath}" />
+		<mkdir dir="${resPath}" />
+	</target>
+	<target name="jar" depends="prepare">
+		<jar destfile="${jar.name}" basedir="bin" />
+		<copy todir="${resPath}" file="${jar.name}" />
+		<copy todir="${resPath}" file="${pom.name}" />
+	</target>
+	<target name="checksum" depends="jar">
+		<checksum file="${resPath}\${jar.name}" algorithm="SHA" fileext=".sha1" />
+		<checksum file="${resPath}\${pom.name}" algorithm="SHA" fileext=".sha1" />
+	</target>
+</project>
